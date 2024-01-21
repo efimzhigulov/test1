@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+{% for c in context %}
+<a href="{{ c.get_absolute_url }}">{{ c.title}}</a>
+{% endfor %}
+</body>
+</html>
